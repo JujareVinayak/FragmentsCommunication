@@ -11,7 +11,7 @@ public class ViewPagerEventBus extends FragmentPagerAdapter {
     private static final String[] TAB_TITLES = new String[]{ "First", "Second"};
     private final Context mContext;
     public ViewPagerEventBus(Context context, FragmentManager fm) {
-        super(fm);
+       super(fm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         mContext = context;
     }
     @Override
